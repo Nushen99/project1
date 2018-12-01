@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "Word Change",
+  "description": "Changing words",
+  "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_title": "<3",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+        {
+            "js": ["jquery-3.3.1.min.js", "popup.js", "content.js" ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ],
+
+  	"background": {
+  		"scripts": ["background.js"]
+  	},
+  "permissions": [
+    "storage",
+     "debugger"
+  ]
+}
