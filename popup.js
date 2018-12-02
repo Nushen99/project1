@@ -1,5 +1,4 @@
  $(document).ready(function(){
-
     chrome.storage.local.get(['items'], function(obj){
         console.log(obj)
     
@@ -47,7 +46,7 @@
                 const newItem = {
                     key: $('#item').val(),
                     value: $('#item1').val()
-                };
+                };  
                 items.push(newItem);
                 
                 chrome.storage.local.set({'items': JSON.stringify(items)});
@@ -75,7 +74,7 @@
 
 
      $('#clearAll').click(function(){
-        console.log('hiii')
+        
         chrome.storage.local.get(['items'], function(obj){
         let items = obj.items;
         if(items && items.length > 0) {
@@ -83,12 +82,12 @@
         } else {
             items = [];
         }
-        
-        chrome.storage.local.set({'items': []});
-
+        console.log("deleted")
+        chrome.storage.local.set({'items': JSON.stringify(items)});
             $("ul").empty(); // delete li not ul   
-        
-        });    
+        });
+
+
     });
 
      
