@@ -3,28 +3,239 @@ list-style-type: none;
 }
 
 
+#item {
+	width: 125px;
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:2px solid #48D1CC;
+	height: 32px;
+	color: #333333;
+	padding:3px;
+	font-family:'Open Sans Condensed', sans-serif;
+}
+
+#item [type='text'] { 
+	font-size: 12px; 
+	font-family:'Open Sans Condensed', sans-serif;
+}
+
+#item1 {
+	width: 125px;
+	justify-self : right;
+	background-image:url(images/form_bg.jpg);
+	background-repeat:repeat-x;
+	border:2px solid #48D1CC;
+	height: 32px;	
+	color: #333333;
+	padding:3px;
+	font-family:'Open Sans Condensed', sans-serif;
+}
+#item [type='text'] { 
+	font-size: 12px; 
+	font-family:'Open Sans Condensed', sans-serif;
+}
+ 
+ #greet {
+ 	color: #343434;
+	width: 100%;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+	margin-left: 10px;
+	
+}
+
+
+h2 {
+  font-weight: bold;
+  color: #696969;
+  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 15px 0 0 0;
+}      
+
+
+#main-container {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
 
 #submit {
-	background-color:#44c767;
-	-moz-border-radius:24px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-}
-#submit:hover {
-	background-color:#5cbf2a;
-}
-#submit:active {
-	position:relative;
-	top:1px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 12px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-family:'Open Sans Condensed', sans-serif;
 }
 
-        
+#submit:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+/*  box-shadow: 0px 1px 0px 0px;*/
+ 
+}
+
+#submit {
+	width: 100%;
+	background-color: #48D1CC;
+/*	box-shadow: 0px 5px 0px 0px #5F9EA0;*/
+}
+
+#submit:hover {
+  background-color: #40E0D0;
+
+}
+
+
+#example {
+	text-align: center;
+	color: #48D1CC;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;
+	font-size: 20px;
+}
+
+#myList {
+	width: 100%;
+    text-align: center;
+	color: #48D1CC;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 20px;
+}
+
+
+#clearAll {
+	border-radius: 3px;
+  text-align: center;
+  padding: 5px 12px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+#clearAll:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+/*  box-shadow: 0px 1px 0px 0px;*/
+}
+
+#clearAll {
+	width: 100%;
+	background-color: #48D1CC;
+/*	box-shadow: 0px 5px 0px 0px #5F9EA0;*/
+}
+
+#clearAll:hover {
+  background-color: #40E0D0;
+ 
+}
+
+.listItem {
+	border-radius: 5px;
+
+  font-size: 10px;
+  text-decoration: none;
+  
+  color: red;
+  position: relative;
+  display: inline-block;
+  font-family:'Open Sans Condensed', sans-serif;
+  margin-left: 30px;
+
+}
+
+#list {
+	margin : 3px;
+	padding : 0;
+	position: absolute;
+	top: 0	;
+	right:0;
+	left: 0;
+	bottom:0;
+	height: 10px;
+}
+#list li {
+  border: 1px solid #ddd;
+  height: 40px;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  font-size: 5px;
+  color: #696969;
+  height: 20px;
+  margin-bottom:  3px;
+
+}
+
+/* Add a light grey background color on hover */
+#list li:hover {
+  background-color: #eee;
+}
+
+.small-container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	
+	margin-top: 20px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#scroll {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 0px;
+}
+.inputBoxes {
+	display: flex;
+	justify-content: space-around;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	margin-right: 15px;
+	margin-left: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    justify-items: center;
+}
+.listItem{
+	color:#696969 ;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+.smallButton {
+	color: #696969;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+#scroll{
+	position : relative;
+}

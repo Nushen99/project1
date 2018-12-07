@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
  		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title> Word changer</title>
+		<title> Use my Words</title>
 		
 		<script type="text/javascript" src="jquery-3.3.1.min.js"></script> 
 		<script type="text/javascript" src="popup.js"></script>
@@ -18,27 +18,36 @@
 	
 	
 
-	<body style="width: 270px; height: 400px; padding: 0; margin: 0;">
+	<body style="width: 300px; height: 500px; padding: 0;" id="UseMyWordsExtensionPleaseWorkBYE">
 
 	
-		<h2 id="greet"> Word Change </h2>
+		
+		<div class="logo">
+			<h1 id="greet">Use my Words</h1> 
 
-		<div class="small-container">
-    <h1 class="example">Input words for change</h1>
+			<img src="loggoo.png" width="95" height="95">    <!-- align="center" -->
+		</div>
 
-    <div>
-      <input id="item" type="text" placeholder="Word 1">
-      <input id="item1" type="text" placeholder="Word 2">
-      <button id='submit'>Add</button>
- 
+		<h2 id="example">Input words</h2>
 
-    <h2>Items</h2>
+	<div class="small-container">
+		<div class="inputBoxes">
+	      <input id="item" type="text" placeholder="Replace this word">
+	      <input id="item1" type="text" placeholder="With this word">
+      	</div>
+      	<button id='submit'>Add</button>
+ 	</div>
+
+ 	
+
+       <h2 id="myList">My list</h2>
+<div class="small-container">
+  <div id="scroll" style="overflow-y: scroll; height:100px; width: 300px">
     <ul id= "list"></ul>
+  </div>
 
-    <button id= "clearAll">Clear All</button>
-
-
-
+  <button id= "clearAll">Clear All</button>
+</div>
 
 	</body>
 </html>
